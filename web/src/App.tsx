@@ -102,4 +102,4 @@ function App() {
 
 export default App;
 
-//continuar minuto 1:00:33 Stage 2
+//continuar minuto 1:02:52 Stage 2
