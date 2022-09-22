@@ -2,7 +2,7 @@ import { MagnifyingGlassPlus } from "phosphor-react";
 
 import "./styles/main.css";
 
-import logoImg from "./assets/Logo.svg";
+import logoImg from './assets/Logo.svg';
 
 function App() {
   return (
