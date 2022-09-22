@@ -1,43 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Background } from "./src/Components/Background-background-galaxy";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>
-      Hello React Native
-         </Text>
-      
-      <Button title='Send 1'/>
-
-      <StatusBar style="auto" />
-    </View>
-  );
+  return(
+  <Background>{children}</Background>;
+);
 }
-
-interface ButtonProps{
-  title: string;
-}
-
-function Button(props: ButtonProps){
-  return (
-    <TouchableOpacity>
-      <text>
-        {props.title}
-      </text>
-    </TouchableOpacity>
-  )
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#000000',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title:{
-    color:'#fff',
-    fontSize: 50
-  }
-});
